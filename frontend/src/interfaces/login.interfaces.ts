@@ -1,0 +1,3 @@
+type propsType = {
+    id: number;
+  };

@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Login from "./login/login.component";
 
-export default function Home() {
+export default function Home({ id }: propsType): any {
   return (
     <main>
+      <Login />
       <h1>Hola Mundo</h1>
     </main>
-  )
+  );
 }
