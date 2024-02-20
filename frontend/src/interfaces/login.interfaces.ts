@@ -1,3 +1,0 @@
-type propsType = {
-    id: number;
-  };

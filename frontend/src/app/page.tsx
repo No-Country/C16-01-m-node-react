@@ -1,9 +1,6 @@
-import Login from "./login/login.component";
-
-export default function Home({ id }: propsType): any {
+export default function Home() {
   return (
     <main>
-      <Login />
       <h1>Hola Mundo</h1>
     </main>
   );
