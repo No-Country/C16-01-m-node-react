@@ -32,6 +32,7 @@ export default function Login() {
       <h2 className="text-2xl mb-6 text-black">Login</h2>
       <input
         type="text"
+        required
         name="email"
         placeholder="E-mail"
         value={email}
@@ -40,6 +41,7 @@ export default function Login() {
       <input
         type="password"
         placeholder="Contraseña"
+        required
         name="password"
         value={password}
         className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md text-black"
@@ -51,14 +53,13 @@ export default function Login() {
         >
           Iniciar sesión
         </button>
-        <button
-          className="w-full bg-blue-500 text-white px-4 py-2 rounded-full
-          hover:bg-blue-600 transition-colors mb-2"
-        >
-          {" "}
-          Crear Cuenta
-        </button>
       </div>
+      <button
+        className="w-full bg-blue-500 text-white px-4 py-2 rounded-full
+          hover:bg-blue-600 transition-colors mb-2"
+      >
+        Crear Cuenta
+      </button>
     </form>
   );
 }

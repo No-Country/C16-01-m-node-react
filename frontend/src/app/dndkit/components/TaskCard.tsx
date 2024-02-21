@@ -20,10 +20,10 @@ export default function TaskCard({ task, deleteTask, taskUpdate }: props) {
 
   if (editMode) {
     return (
-      <div className="relative p-2 m-2 h-[120px] min-h-[120px] bg-zinc-900 rounded-md items-center flex hover:ring-inset hover:ring-1 hover:ring-white">
+      <div className="relative p-2 m-2 h-[120px] min-h-[120px] bg-rose-100 rounded-md items-center flex hover:ring-inset hover:ring-1 hover:ring-white">
         <textarea
           value={task.content}
-          className="text-white w-full border-none rounded-md focus:outline-none bg-transparent h-[90%]"
+          className="text-black w-full border-none rounded-md focus:outline-none bg-transparent h-[90%]"
           onBlur={toogleEditMode}
           onKeyDown={(e) => {
             if (e.key === "Enter" && e.shiftKey) toogleEditMode();
@@ -36,7 +36,7 @@ export default function TaskCard({ task, deleteTask, taskUpdate }: props) {
 
   return (
     <div
-      className="relative p-2 m-2 h-[120px] min-h-[120px] bg-zinc-900 rounded-md items-center flex hover:ring-inset hover:ring-1 hover:ring-white"
+      className="relative p-2 m-2 h-[120px] min-h-[120px] bg-rose-100 rounded-md items-center flex hover:ring-inset hover:ring-1 hover:ring-white"
       onMouseEnter={() => setMouseIsOver(true)}
       onMouseLeave={() => setMouseIsOver(false)}
       onClick={() => toogleEditMode()}
@@ -44,7 +44,7 @@ export default function TaskCard({ task, deleteTask, taskUpdate }: props) {
       {task.content}
       {mouseIsOver && (
         <button
-          className="cursor-pointer stroke-gray-600 hover:stroke-white absolute right-1 top-1/2 mr-2 -translate-y-1/2"
+          className="cursor-pointer stroke-gray-600 hover:stroke-gray-900 absolute right-1 top-1/2 mr-2 -translate-y-1/2"
           onClick={() => deleteTask(task.id)}
         >
           <TrashIcon />
