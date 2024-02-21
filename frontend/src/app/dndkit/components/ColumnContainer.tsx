@@ -53,18 +53,18 @@ export default function ColumnContainer({
       style={style}
     >
       <div
-        className="bg-zinc-900 rounded-md h-[40px] min-h-[40px] flex justify-between items-center p-2 hover:ring-inset hover:ring-1 hover:ring-white"
+        className="bg-rose-900 rounded-md h-[40px] min-h-[40px] flex justify-between items-center p-2 hover:ring-inset hover:ring-1 hover:ring-white"
         {...attributes}
         {...listeners}
       >
         <div className=" flex items-center p-1  ">
-          <div className="m-2 px-2 py-1 rounded-full text-sm  bg-slate-950">
+          <div className="m-2 px-2 py-1 rounded-full text-sm  bg-violet-200">
             0
           </div>
           <div onClick={() => setEditMode(!editMode)}>
             {editMode && (
               <input
-                className="bg-zinc-900 rounded-md  outline-none"
+                className="bg-rose-900 rounded-md  outline-none text-white"
                 value={column.title}
                 onChange={(e) => updateColumn(column.id, e.target.value)}
                 type="text"
@@ -81,13 +81,13 @@ export default function ColumnContainer({
         </div>
         <button
           onClick={() => deleteColumn(column.id)}
-          className="cursor-pointer stroke-gray-600 hover:stroke-white"
+          className="cursor-pointer stroke-gray-600 hover:stroke-white text-white"
         >
           <TrashIcon />
         </button>
       </div>
 
-      <div className="flex flex-grow flex-col bg-slate-800 p-2 rounded-md my-2">
+      <div className="flex flex-grow flex-col bg-violet-600 p-2 rounded-md my-2">
         {tasks.map((task) => (
           <TaskCard
             key={task.id}
@@ -99,7 +99,7 @@ export default function ColumnContainer({
       </div>
 
       <button
-        className="flex items-center p-2 bg-slate-900 rounded-md hover:ring-inset hover:ring-1 hover:ring-white"
+        className="flex items-center p-2 bg-rose-900 rounded-md hover:ring-inset hover:ring-1  text-white hover:ring-white"
         onClick={() => createTask(column.id)}
       >
         <div>
