@@ -1,13 +1,14 @@
 "use client";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import {
-  Bars3Icon,
-  BellAlertIcon,
-  XMarkIcon,
-  MagnifyingGlassIcon,
-} from "@heroicons/react/24/outline";
-import { signOut } from "next-auth/react";
+import { 
+  MenuAlt3Icon as Bars3Icon, 
+  BellIcon, 
+  ExclamationCircleIcon as BellAlertIcon, 
+  XIcon as XMarkIcon, 
+  SearchIcon as MagnifyingGlassIcon 
+} from '@heroicons/react/outline';
+import { useSession } from "next-auth/react";
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
   { name: "Team", href: "#", current: false },
@@ -56,7 +57,7 @@ export default function Navbar() {
                           />
                         </button>
                         <button>
-                          <BellAlertIcon
+                          <BellIcon
                             className="h-8 w-8 bg-transparent text-black cursor-pointer"
                             aria-hidden="true"
                           />

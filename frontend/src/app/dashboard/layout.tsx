@@ -1,5 +1,6 @@
 import ResponsiveDrawer from "./components/sidebar";
 import Navbar from "./components/navbar";
+import ResponsiveDrawer from "./components/demo";
 
 export default function DashboardLayout({
   children,
