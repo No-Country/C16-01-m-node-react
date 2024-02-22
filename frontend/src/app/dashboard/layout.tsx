@@ -1,3 +1,4 @@
+import ResponsiveDrawer from "./components/sidebar";
 import Navbar from "./components/navbar";
 import ResponsiveDrawer from "./components/demo";
 
@@ -7,10 +8,12 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={""}>
-      <Navbar />
+    <div className="flex">
       <ResponsiveDrawer />
-      {children}
+      <div className="flex flex-col w-full">
+        <Navbar />
+        <div className="w-full">{children}</div>
+      </div>
     </div>
   );
 }
