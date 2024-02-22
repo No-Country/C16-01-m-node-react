@@ -3,12 +3,11 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
-  BellIcon,
   BellAlertIcon,
   XMarkIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
-import { useSession } from "next-auth/react";
+import { signOut } from "next-auth/react";
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
   { name: "Team", href: "#", current: false },
@@ -22,7 +21,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   function handlelogout() {
-    console.log("deslogeando");
+    signOut();
   }
   return (
     <Disclosure as="nav" className="bg-white">
