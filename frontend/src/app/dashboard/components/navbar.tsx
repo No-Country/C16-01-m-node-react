@@ -48,7 +48,7 @@ export default function Navbar() {
                     <div className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">View notifications</span>
-                      <div className="flex flex-row gap-5 pl-10">
+                      <div className="flex flex-row gap-5 pl-1">
                         <button>
                           <MagnifyingGlassIcon
                             className="h-8 w-8 bg-transparent text-black cursor-pointer"
