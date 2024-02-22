@@ -1,14 +1,13 @@
 "use client";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { 
-  MenuAlt3Icon as Bars3Icon, 
-  BellIcon, 
-  ExclamationCircleIcon as BellAlertIcon, 
-  XIcon as XMarkIcon, 
-  SearchIcon as MagnifyingGlassIcon 
-} from '@heroicons/react/outline';
-import { useSession } from "next-auth/react";
+import {
+  Bars3Icon,
+  BellIcon,
+  XMarkIcon,
+  MagnifyingGlassIcon,
+} from "@heroicons/react/24/outline";
+import { signOut } from "next-auth/react";
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
   { name: "Team", href: "#", current: false },
@@ -22,7 +21,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   function handlelogout() {
-    console.log("deslogeando");
+    signOut();
   }
   return (
     <Disclosure as="nav" className="bg-white">
@@ -49,7 +48,7 @@ export default function Navbar() {
                     <div className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">View notifications</span>
-                      <div className="flex flex-row gap-5 pl-10">
+                      <div className="flex flex-row gap-5 pl-1">
                         <button>
                           <MagnifyingGlassIcon
                             className="h-8 w-8 bg-transparent text-black cursor-pointer"

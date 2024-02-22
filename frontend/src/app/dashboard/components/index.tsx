@@ -1,8 +1,8 @@
 "use client";
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import { StyledEngineProvider } from '@mui/material/styles';
-import Demo from './demo';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import { StyledEngineProvider } from "@mui/material/styles";
+import Demo from "./demo";
 
 const rootElement = document.querySelector("#root");
 if (!rootElement) {
