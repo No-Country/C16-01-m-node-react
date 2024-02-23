@@ -2,7 +2,7 @@
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { EyeIcon, EyeOffIcon } from '@heroicons/react/outline'; // Importa los iconos
+// import { EyeIcon, EyeOffIcon } from '@heroicons/react/outline'; // Importa los iconos
 
 export default function Login() {
   const [errors, setErrors] = useState<string[]>([]);
@@ -53,7 +53,7 @@ export default function Login() {
           className="absolute top-3 right-0 pr-3 flex items-center cursor-pointer" // Posiciona el icono en la esquina superior derecha
           onClick={() => setShowPassword(!showPassword)} // Cambia el estado showPassword cuando se hace click en el icono
         >
-          {showPassword ? <EyeIcon className="h-5 w-5" /> : <EyeOffIcon className="h-5 w-5" />} {/* Muestra el icono correcto basado en el estado showPassword */}
+          {/* {showPassword ? <EyeIcon className="h-5 w-5" /> : <EyeOffIcon className="h-5 w-5" />} Muestra el icono correcto basado en el estado showPassword */}
         </div>
       </div>
       <div className="gap-2">
