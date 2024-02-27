@@ -15,20 +15,16 @@ import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import Toolbar from "@mui/material/Toolbar";
 
-// Ancho del Drawer
 const drawerWidth = 240;
 
-// Propiedades del componente
 interface Props {
   window?: () => Window;
 }
 
-// Componente ResponsiveDrawer
 export default function ResponsiveDrawer(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  // Función para alternar la apertura y cierre del Drawer en dispositivos móviles
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -40,15 +36,14 @@ export default function ResponsiveDrawer(props: Props) {
     { name: "Reuniones", href: "#", current: false },
   ];
 
-  // Contenido del Drawer
   const drawer = (
-    <div>
+    <Box sx={{ backgroundColor: "#e2e0d5" }}>
       <Toolbar />
       <Divider />
       <List>
         {navigation.map((text, index) => (
           <ListItem key={index} disablePadding>
-            <ListItemButton>
+            <ListItemButton sx={{ "&:hover": { color: "#ed6f37" } }}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
@@ -58,37 +53,33 @@ export default function ResponsiveDrawer(props: Props) {
         ))}
       </List>
       <Divider />
-    </div>
+    </Box>
   );
 
-  // Contenedor del Drawer según el tipo de ventana especificada en las propiedades
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      {/* AppBar */}
       <AppBar
         position="fixed"
         sx={{
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       />
-      {/* Drawer */}
       <Box
         component="nav"
         sx={{ width: { md: drawerWidth }, flexShrink: { md: 0 } }}
         aria-label="mailbox folders"
       >
-        {/* Drawer temporal en dispositivos móviles */}
         <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Mejora el rendimiento de apertura en dispositivos móviles
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "block", md: "none" },
@@ -100,7 +91,6 @@ export default function ResponsiveDrawer(props: Props) {
         >
           {drawer}
         </Drawer>
-        {/* Drawer permanente en pantallas más grandes */}
         <Drawer
           variant="permanent"
           sx={{
@@ -108,6 +98,7 @@ export default function ResponsiveDrawer(props: Props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              backgroundColor: "#e2e0d5",
             },
           }}
           open
@@ -118,3 +109,5 @@ export default function ResponsiveDrawer(props: Props) {
     </Box>
   );
 }
+
+
