@@ -14,6 +14,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import Toolbar from "@mui/material/Toolbar";
+import Link from 'next/link';
 
 const drawerWidth = 240;
 
@@ -32,7 +33,7 @@ export default function ResponsiveDrawer(props: Props) {
   const navigation = [
     { name: "Inicio", href: "#", current: false },
     { name: "Comunicaciones", href: "#", current: false },
-    { name: "Plataforma", href: "#", current: false },
+    { name: "Plataformas", href: "./plataformas", current: false },
     { name: "Reuniones", href: "#", current: false },
   ];
 
@@ -42,14 +43,14 @@ export default function ResponsiveDrawer(props: Props) {
       <Divider />
       <List>
         {navigation.map((text, index) => (
-          <ListItem key={index} disablePadding>
+          <Link href={text.href} key={index}>
             <ListItemButton sx={{ "&:hover": { color: "#ed6f37" } }}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text.name} />
             </ListItemButton>
-          </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
