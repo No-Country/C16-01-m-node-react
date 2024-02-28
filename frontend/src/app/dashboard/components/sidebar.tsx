@@ -34,7 +34,7 @@ export default function ResponsiveDrawer(props: Props) {
     { name: "Inicio", href: "#", current: false },
     { name: "Comunicaciones", href: "#", current: false },
     { name: "Plataformas", href: "./plataformas", current: false },
-    { name: "Reuniones", href: "#", current: false },
+    { name: "Reuniones", href: "/calendario", current: false },
   ];
 
   const drawer = (
