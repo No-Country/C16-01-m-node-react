@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { IconComponent } from './components/IconComponent.client'; // Importa el componente IconComponent
+import Calendario from './calendario';
 
 export default function Page() {
   return (
@@ -8,7 +9,8 @@ export default function Page() {
         <div style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: 700, lineHeight: '28px', letterSpacing: '0em', textAlign: 'left' }}>Comunicaciones</div>
       </div>
       <div className="bg-gray-400 p-4" style={{width: '410px',height: '480px',top: '161px',left: '913px',borderRadius: '28px', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}>
-      <div style={{ fontFamily: 'Calibri', fontSize: '24px', lineHeight: '28px', letterSpacing: '0em', textAlign: 'left' }}>Calendario</div>
+      <div style={{ fontFamily: 'Calibri', fontSize: '24px', lineHeight: '28px', letterSpacing: '0em', textAlign: 'left' }}></div>
+      <Calendario/>
       </div>
       <div className="bg-custom-color p-4" style={{ width: '400px', height: '244px', top: '516px', left: '398px', borderRadius: '28px', margin: '20px' }}>
         <div style={{ fontFamily: 'Roboto', fontSize: '24px', fontWeight: 700, lineHeight: '28px', letterSpacing: '0em', textAlign: 'left' }}>Plataformas de trabajo</div>
