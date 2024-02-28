@@ -6,7 +6,7 @@ const handler = NextAuth({
         CredentialsProvider({
           name: "Credentials",
           credentials: {
-            email: { label: "email", type: "text", placeholder: "jsmith" },
+            username: { label: "email", type: "text", placeholder: "jsmith" },
             password: { label: "Password", type: "password" }
           },
           async authorize(credentials, req) {
@@ -22,6 +22,24 @@ const handler = NextAuth({
       
               // You can also Reject this callback with an Error thus the user will be sent to the error page with the error message as a query parameter
             }
+
+          
+          // const res = await fetch(
+          //   `${process.env.NEXT_PUBLIC_BACKEND_URL}/users`,
+          //   {
+          //     method: "POST",
+          //     body: JSON.stringify({
+          //       email: credentials?.username,
+          //       password: credentials?.password,
+          //     }),
+          //     headers: { "Content-Type": "application/json" },
+          //   }
+          // );
+          // const user = await res.json();
+  
+          // if (user.error) throw user;
+  
+          // return user;
           }
         })
       ],
