@@ -14,7 +14,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import Toolbar from "@mui/material/Toolbar";
-import Link from 'next/link';
+import Link from "next/link";
 
 const drawerWidth = 240;
 
@@ -31,10 +31,14 @@ export default function ResponsiveDrawer(props: Props) {
   };
 
   const navigation = [
-    { name: "Inicio", href: "#", current: false },
-    { name: "Comunicaciones", href: "#", current: false },
-    { name: "Plataformas", href: "./plataformas", current: false },
-    { name: "Reuniones", href: "/calendario", current: false },
+    { name: "Inicio", href: "/dashboard", current: false },
+    {
+      name: "Comunicaciones",
+      href: "/dashboard/comunicaciones",
+      current: false,
+    },
+    { name: "Plataformas", href: "/dashboard/plataformas", current: false },
+    { name: "Reuniones", href: "/dashboard/reuniones", current: false },
   ];
 
   const drawer = (
@@ -110,5 +114,3 @@ export default function ResponsiveDrawer(props: Props) {
     </Box>
   );
 }
-
-
