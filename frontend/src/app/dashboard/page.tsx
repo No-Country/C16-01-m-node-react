@@ -9,8 +9,8 @@ export default function Page() {
       <div
         className="bg-custom-color p-4"
         style={{
-          width: "380px",
-          height: "318px",
+          width: "355px",
+          height: "300px",
           top: "161px",
           left: "398px",
           borderRadius: "28px",
@@ -20,7 +20,7 @@ export default function Page() {
       >
         <div
           style={{
-            fontFamily: "Roboto",
+            fontFamily: "Calibri",
             fontSize: "24px",
             fontWeight: 700,
             lineHeight: "28px",
@@ -29,13 +29,48 @@ export default function Page() {
           }}
         >
           Comunicaciones
+          <div className="relative mt-8">
+            {/* Div blanco dentro del div principal */}
+            <div className="absolute w-80 h-20 bg-white rounded-2xl flex items-center justify-between">
+              {/* Div azul con texto "ux/ui" */}
+              <div className="absolute top-3 left-4 bg-blue-500 text-white w-14 h-14 rounded-lg flex items-center justify-center">
+                <p className="text-sm font-bold text-black">UX/UI</p>
+              </div>
+              <p className="text-sm text-gray-800 font-bold ml-20">Daniel, nuevo miembro en el equipo</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Segundo conjunto de elementos */}
+        <div
+          style={{
+            fontFamily: "Calibri",
+            fontSize: "24px",
+            fontWeight: 700,
+            lineHeight: "28px",
+            letterSpacing: "0em",
+            textAlign: "left",
+          }}
+        >
+          Comunicaciones
+          <div className="relative mt-20">
+            {/* Div blanco dentro del div principal */}
+            <div className="absolute w-80 h-20 bg-white rounded-2xl flex items-center justify-between">
+              {/* Div azul con texto "ux/ui" */}
+              <div className="absolute top-3 left-4 bg-blue-500 text-white w-14 h-14 rounded-lg flex items-center justify-center">
+                <p className="text-sm font-bold text-black">FD</p>
+              </div>
+              <p className="text-sm text-gray-800 font-bold ml-20">María, nueva miembro en el equipo</p>
+            </div>
+          </div>
         </div>
       </div>
+      
       <div
         className="bg-custom-color p-4"
         style={{
           width: "600px",
-          height: "500px",
+          height: "380px",
           top: "161px",
           left: "913px",
           borderRadius: "28px",
@@ -59,7 +94,7 @@ export default function Page() {
       >
         <div
           style={{
-            fontFamily: "Roboto",
+            fontFamily: "Calibri",
             fontSize: "24px",
             fontWeight: 700,
             lineHeight: "28px",
@@ -84,7 +119,7 @@ export default function Page() {
       >
         <div
           style={{
-            fontFamily: "Roboto",
+            fontFamily: "Calibri",
             fontSize: "24px",
             fontWeight: 700,
             lineHeight: "28px",
