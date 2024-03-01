@@ -1,36 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
 :root {
   @apply bg-gray-50;
@@ -41,8 +12,8 @@ input {
 }
   .fc-header-toolbar {
     display: inline-block;
+    font-size: 10px;
     padding: 4px 4px;
-    
     @apply space-x-8;
 }
 
@@ -59,8 +30,7 @@ input {
 }
 
 .fc-h-event {
-  @apply bg-violet-500 border border-violet-600 ;
-  
+  @apply bg-red-500 border border-orange-600 ;
 }
 
 .fc .fc-daygrid-day.fc-day-today {
@@ -68,17 +38,68 @@ input {
 }
 
 .fc .fc-button{
-  @apply bg-violet-800 hover:bg-violet-900  ;
+  @apply bg-orange-500 hover:bg-orange-600  ;
+
 }
 
 .fc .fc-button-primary:not(:disabled).fc-button-active {
-  @apply bg-violet-600;
+  @apply bg-orange-600;
+  
 }
 
 .fc .fc-button-primary:disabled {
-  @apply bg-violet-600;
+  @apply bg-orange-600;
 }
 .fc-v-event {
-  @apply bg-violet-500 border border-violet-600 ;
+  @apply bg-orange-500 border border-orange-600 ;
+  
+}
+
+/* ia  */
+.fc-daygrid-day {
+  @apply bg-gray-200;
+  @apply border-b border-gray-300;
+  @apply p-2;
+}
+
+.fc-daygrid-day.fc-day-today {
+  @apply bg-violet-100;
+}
+
+.fc-daygrid-day.fc-day-today:hover {
+  @apply bg-orange-200;
+}
+
+.fc-daygrid-day.fc-day-today:active {
+  @apply bg-orange-300;
+}
+
+.fc-daygrid-day.fc-day-today:focus {
+  @apply bg-orange-400;
+}
+
+.fc-daygrid-day.fc-day-today:focus:hover {
+  @apply bg-orange-500;
+}
+
+.fc-daygrid-day.fc-day-today:focus:active {
+  @apply bg-orange-600;
+}
+
+.fc-daygrid-day.fc-day-today:focus:visited {
+  @apply bg-orange-700;
+}
+
+.fc-daygrid-day.fc-day-today:focus:visited:hover {
+  @apply bg-orange-800;
+}
+
+.fc-daygrid-day.fc-day-today:focus:visited:active {
+  @apply bg-orange-900;
+}
+
+.fc-dayGridMonth-view .fc-day {
+  /* Estilos para los días en la vista month */
+  @apply border-none rounded-3xl ; 
   
 }
