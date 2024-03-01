@@ -72,6 +72,7 @@ export default function DemoApp() {
             month: 'Mes',
             week: 'Semana',
             day: 'Día',
+            list: 'Lista',
           }}
           initialView="dayGridMonth"
           editable={true}

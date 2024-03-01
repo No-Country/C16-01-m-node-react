@@ -4,24 +4,24 @@ import IconComponent from "./IconComponent"; // Importa el componente IconCompon
 export default function Page() {
   return (
     <div className="grid grid-cols-4 grid-rows-3 gap-4 p-4">
-      <div className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
+      <a href="https://drive.google.com/" target="_blank" className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
         <IconComponent icon="driveIcon" />
-      </div>
-      <div className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
+      </a>
+      <a href="https://www.figma.com/file/XJHH1FUaCE9bYmpivEzARz/IntraNoc-Copia-para-Frontend?type=design&node-id=0-1&mode=design&t=Vfzo70AwSCRtTwwh-0" target="_blank" className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
         <IconComponent icon="figmaIcon" />
-      </div>
-      <div className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
+      </a>
+      <a href="https://trello.com/b/8IbkQS0o/no-country-app-gesti%C3%B3n-de-equipo" target="_blank" className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
         <IconComponent icon="trelloIcon" />
-      </div>
-      <div className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
+      </a>
+      <a href="https://github.com/No-Country/C16-01-m-node-react" target="_blank" className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
         <IconComponent icon="githubIcon" />
-      </div>
-      <div className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
+      </a>
+      <a href="https://code.visualstudio.com/" target="_blank" className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
         <IconComponent icon="visualStudioCodeIcon" />
-      </div>
-      <div className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
+      </a>
+      <a href="https://getbootstrap.com/" target="_blank" className="w-56 h-56 bg-stone-100 bg-opacity-40 rounded-3xl backdrop-blur-3xl">
         <IconComponent icon="bootstrapIcon" />
-      </div>
+      </a>
       {/* Repite estos divs para cada ubicación en la cuadrícula */}
     </div>
   );

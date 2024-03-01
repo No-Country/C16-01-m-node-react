@@ -20,3 +20,12 @@
     border-radius: 2px; /* Agrega curva a los bordes */
     color: white !important;
   }
+
+  .fc-daygrid-day {
+    border-radius: 0 !important; /* Elimina las puntas curvadas */
+    background-color: #f0f0f0; /* cambiar color fondo de los dias*/
+  }
+  
+  .fc-day-header {
+    background-color: #ed6f37; /* Cambia el color de fondo de la fila de días definidos */
+  }
