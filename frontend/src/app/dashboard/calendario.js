@@ -7,6 +7,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { INITIAL_EVENTS, createEventId } from './event-utils';
 import './calendario.css'
+
 export default function DemoApp() {
   const [weekendsVisible, setWeekendsVisible] = useState(true);
   const [currentEvents, setCurrentEvents] = useState([]);
@@ -16,7 +17,7 @@ export default function DemoApp() {
   // }
 
   function handleDateSelect(selectInfo) {
-    let title = prompt('Please enter a new title for your event');
+    let title = prompt('Por favor, ingrese un título para su evento');
     let calendarApi = selectInfo.view.calendar;
 
     calendarApi.unselect(); // clear date selection
@@ -35,7 +36,7 @@ export default function DemoApp() {
   function handleEventClick(clickInfo) {
     if (
       confirm(
-        `Are you sure you want to delete the event '${clickInfo.event.title}'`
+        `¿Estas seguro de que quieres eliminar el evento? '${clickInfo.event.title}'`
       )
     ) {
       clickInfo.event.remove();
@@ -60,6 +61,13 @@ export default function DemoApp() {
             left: 'prev,next today',
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay',
+          }}
+          locale="es" // Cambiar el idioma a español
+          buttonText={{
+            today: 'Hoy',
+            month: 'Mes',
+            week: 'Semana',
+            day: 'Día',
           }}
           initialView="dayGridMonth"
           editable={true}

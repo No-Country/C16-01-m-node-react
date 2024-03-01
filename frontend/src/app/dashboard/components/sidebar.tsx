@@ -1,4 +1,4 @@
-// Importación de módulos y componentes de React y Material-UI
+// Importación de módulos y componentes de React, Material-UI y Iconify
 "use client";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
@@ -6,15 +6,18 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import MailIcon from "@mui/icons-material/Mail";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
+import { Icon } from '@iconify/react';
+import homeIcon from '@iconify/icons-mdi/home';
+import messageTextIcon from '@iconify/icons-mdi/message-text';
+import webIcon from '@iconify/icons-mdi/web';
+import calendarIcon from '@iconify/icons-mdi/calendar';
 
 const drawerWidth = 240;
 
@@ -31,14 +34,10 @@ export default function ResponsiveDrawer(props: Props) {
   };
 
   const navigation = [
-    { name: "Inicio", href: "/dashboard", current: false },
-    {
-      name: "Comunicaciones",
-      href: "/dashboard/comunicaciones",
-      current: false,
-    },
-    { name: "Plataformas", href: "/dashboard/plataformas", current: false },
-    { name: "Reuniones", href: "/dashboard/reuniones", current: false },
+    { name: "Inicio", href: "/dashboard", current: false, icon: homeIcon },
+    { name: "Comunicaciones", href: "/dashboard/comunicaciones", current: false, icon: messageTextIcon },
+    { name: "Plataformas", href: "/dashboard/plataformas", current: false, icon: webIcon },
+    { name: "Reuniones", href: "/dashboard/reuniones", current: false, icon: calendarIcon },
   ];
 
   const drawer = (
@@ -49,10 +48,10 @@ export default function ResponsiveDrawer(props: Props) {
         {navigation.map((text, index) => (
           <Link href={text.href} key={index}>
             <ListItemButton sx={{ "&:hover": { color: "#ed6f37" } }}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <ListItemIcon sx={{ fontSize: 25, marginRight: -1, color: 'black'}}>
+                <Icon icon={text.icon} />
               </ListItemIcon>
-              <ListItemText primary={text.name} />
+              <ListItemText primary={text.name} sx={{ fontFamily: 'Calibri', fontSize: 16, fontWeight: 'bold' }} />
             </ListItemButton>
           </Link>
         ))}

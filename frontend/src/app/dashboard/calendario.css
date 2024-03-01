@@ -7,3 +7,16 @@
 
   }
   
+  .fc-button-primary {
+    background-color: #ed6f37 !important;
+    border-color: #ed6f37 !important;
+    color: white !important;
+  }
+  
+  /* Cambiar el color de los eventos */
+  .fc-event-main {
+    background-color: #ed6f37 !important;
+    box-shadow: 0 0 0 1px #000, 0 0 2px #000; /* Cambia el color del contorno a negro y agrega sombra */
+    border-radius: 2px; /* Agrega curva a los bordes */
+    color: white !important;
+  }
