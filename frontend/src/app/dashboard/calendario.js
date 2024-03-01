@@ -5,8 +5,11 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+
+import listPlugin from "@fullcalendar/list";
+
 import { INITIAL_EVENTS, createEventId } from './event-utils';
-import './calendario.css'
+
 export default function DemoApp() {
   const [weekendsVisible, setWeekendsVisible] = useState(true);
   const [currentEvents, setCurrentEvents] = useState([]);
@@ -55,11 +58,12 @@ export default function DemoApp() {
       /> */}
       <div className="demo-app-main">
         <FullCalendar
-          plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+      
+          plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin,listPlugin]}
           headerToolbar={{
             left: 'prev,next today',
             center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay,list',
           }}
           initialView="dayGridMonth"
           editable={true}
