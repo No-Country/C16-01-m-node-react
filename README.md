@@ -265,9 +265,19 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
 <img src="https://imgur.com/lqDoVKE.png"/>
 
 
+<img src="https://imgur.com/tzN99z6.png"/>
 
 
+<img src="https://imgur.com/BfZho2H.png"/>
 
+
+<img src="https://imgur.com/AgP0DUR.png"/>
+
+
+<img src="https://imgur.com/6Nu9cPo.png"/>
+
+
+<img src="https://imgur.com/1EKgbht.png"/>
 
 
 <!-- ACKNOWLEDGMENTS -->
