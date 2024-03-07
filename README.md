@@ -9,15 +9,6 @@
 <div align="center">
 
 
-  <a href="No-Country/C13-41-FT-NODE-REACT" target="_blank">
-    <img src="https://i.imgur.com/tVmFUOJ.png" alt="Banner">
-  </a>
-
-
-
-
-
-
 
 <h3 align="center">Bienvenid@s a IntraNoc</h3>
 
@@ -39,8 +30,8 @@
 
 
 <br />
-  <a href="No-Country/C13-41-FT-NODE-REACT" target="_blank">
-    <img src="https://i.imgur.com/66vNU4U.png" alt="Logo" width="96" height="96">
+  <a href="No-Country/C16-01-m-node-react" target="_blank">
+    <img src="https://imgur.com/a/aYhOJum" alt="Logo" width="96" height="96">
   </a>
 <br />
 
