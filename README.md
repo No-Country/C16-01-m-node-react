@@ -8,7 +8,9 @@
 <br />
 <div align="center">
 
-
+<a href="No-Country/c16-01-m-node-react" target="_blank">
+    <img src="https://imgur.com/lqr1HxG.png" alt="Banner">
+  </a>
 
 <h3 align="center">Bienvenid@s a IntraNoc</h3>
 
@@ -257,25 +259,13 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
 <img src="https://imgur.com/BAQ9eMN.png"/>
 
 
-<img src="https://imgur.com/a/9XTE4Cd.png"/>
+<img src="https://imgur.com/yVR5Xug.png"/>
 
 
-<img src="https://i.imgur.com/ZHdFplT.png"/>
+<img src="https://imgur.com/lqDoVKE.png"/>
 
 
-<img src="https://i.imgur.com/gwy7mMJ.png"/>
 
-
-<img src="https://i.imgur.com/z0wgCVz.png"/>
-
-
-<img src="https://i.imgur.com/D0DeU4Z.png"/>
-
-
-<img src="https://i.imgur.com/wHuwja1.png"/>
-
-
-<img src="https://i.imgur.com/IeVncbl.png"/>
 
 
 
