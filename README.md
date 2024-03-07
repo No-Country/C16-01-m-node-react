@@ -31,7 +31,7 @@
 
 <br />
   <a href="No-Country/C16-01-m-node-react" target="_blank">
-    <img src="https://imgur.com/CO2JYZD" alt="Logo" width="96" height="96">
+    <img src="https://imgur.com/CO2JYZD.png" alt="Logo" width="96" height="96">
   </a>
 <br />
 
@@ -257,7 +257,7 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
 <img src="https://imgur.com/BAQ9eMN.png"/>
 
 
-<img src="https://i.imgur.com/IOrVNR6.png"/>
+<img src="https://imgur.com/a/9XTE4Cd.png"/>
 
 
 <img src="https://i.imgur.com/ZHdFplT.png"/>
