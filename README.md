@@ -254,7 +254,7 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
 </h1>
 
 
-<img src="https://imgur.com/BAQ9eMN"/>
+<img src="https://imgur.com/BAQ9eMN.png"/>
 
 
 <img src="https://i.imgur.com/IOrVNR6.png"/>
