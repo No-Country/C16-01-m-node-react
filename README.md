@@ -127,9 +127,6 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
     <td>
       <div align="center">
         <a href="https://www.linkedin.com/in/gared-lyon-194b21222/" target="_blank" rel="author">
-          <img width="110" src="https://avatars.githubusercontent.com/u/99148932?v=4"/>
-        </a>
-        <a href="https://www.linkedin.com/in/gared-lyon-194b21222/" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Sandra Rodriguez</h4>
           <h4 style="margin-top: 1rem;">Project Manager</h4>
         </a>
@@ -140,9 +137,6 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
     </td>
     <td>
       <div align="center">
-        <a href="https://www.linkedin.com/in/cristiandalpiva/" target="_blank" rel="author">
-          <img width="110" src="https://mir-s3-cdn-cf.behance.net/user/276/68c7321387255935.642bfb8c90e23.jpg"/>
-        </a>
         <a href="https://www.linkedin.com/in/cristiandalpiva/" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Cristian Dal Piva</h4>
           <h4 style="margin-top: 1rem;">UX/UI</h4>
@@ -158,9 +152,6 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
         <td>
       <div align="center">
         <a href="https://www.linkedin.com/in/nathalymaestre/" target="_blank" rel="author">
-          <img width="110" src="https://avatars.githubusercontent.com/u/55055505?v=4"/>
-        </a>
-        <a href="https://www.linkedin.com/in/nathalymaestre/" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Nathaly Maestre</h4>
           <h4 style="margin-top: 1rem;">UX/UI</h4>
         </a>
@@ -171,9 +162,6 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
     </td>
     <td>
       <div align="center">
-        <a href="https://www.linkedin.com/in/edith-m-49bb32219/" target="_blank" rel="author">
-          <img width="110" src="https://avatars.githubusercontent.com/u/133410238?v=4"/>
-        </a>
         <a href="https://www.linkedin.com/in/edith-m-49bb32219/" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Edith Mendez</h4>
           <h4 style="margin-top: 1rem;">UX/UI</h4>
@@ -192,9 +180,6 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
     <td>
       <div align="center">
         <a href="https://github.com/nachog8" target="_blank" rel="author">
-          <img width="110" src="https://avatars.githubusercontent.com/u/117213839?v=4"/>
-        </a>
-        <a href="https://github.com/nachog8" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Ignacio Guridi</h4>
           <h4 style="margin-top: 1rem;">Frontend Developer</h4>
         </a>
@@ -208,9 +193,6 @@ Puedes Comenzar registrándote en nuestro portal, luego podrás iniciar sesión 
     </td>
     <td>
       <div align="center">
-        <a href="https://www.linkedin.com/in/leandronicolas1983/" target="_blank" rel="author">
-          <img width="110" src="https://avatars.githubusercontent.com/u/70069226?v=4"/>
-        </a>
         <a href="https://www.linkedin.com/in/leandronicolas1983/" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Leandro Maranda</h4>
           <h4 style="margin-top: 1rem;">Frontend Developer</h4>
